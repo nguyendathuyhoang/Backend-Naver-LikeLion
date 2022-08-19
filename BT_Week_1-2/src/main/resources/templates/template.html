@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff list</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;">Staff list <span th:text="${roomID}"></span></h1>
+<!-- <h1>Name = <span th:text="${name}"> </h1>
+<h1>Age = <span th:text="${age}"> </h1> -->
+<table style="text-align: center; background-color: #EEEEEE;" border="1" cellpadding="2" cellspacing="0" align="center">
+    <tr style="background-color: black; color: #EEEEEE;">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Hobby</th>
+    </tr>
+    <tr align="center">
+    <tr th:each="person: ${listPerson}">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.age}"></td>
+        <td th:text="${person.hobby}"></td>
+    </tr>
+    </tr>
+</table>
+</body>
+</html>
