@@ -74,7 +74,8 @@
 ```
 ---
 ## 2. Singleton + Factory Pattern
-
+#### GET PC and Server
+#### /factory-method/server and /factory-method/pc
 ![image](https://user-images.githubusercontent.com/104447131/187057678-37982885-213a-490d-b5ce-a12c5f6a8442.png)
 
 ```
