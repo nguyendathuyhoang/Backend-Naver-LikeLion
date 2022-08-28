@@ -54,7 +54,7 @@
 }
 ```
 ##### Get Employee By Mybatis
-##### /employee/find/1
+##### /employee/findV2/1
 ```json
 {
     "status": "ok",
