@@ -1,4 +1,4 @@
-package com.example.week2.model.dto;
+package com.example.week2.model;
 
 import com.example.week2.model.Department;
 import com.fasterxml.jackson.annotation.JsonFormat;
