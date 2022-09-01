@@ -36,7 +36,7 @@ public class CartItemServiceImpl implements CartItemService {
             throw new ProductNotFoundException();
         }
         List<CartItem> listItemCart = mbtCartItemRepository
-                .findCartItemByCustomerIdAndProductName(customerId, nameProduct);
+                .findCartItemByCustomerIdAndProductName(customerId, "%"+nameProduct+"%");
         if(listItemCart.size() < limit){
             throw new NotEnoughItemException(listItemCart);
         }
