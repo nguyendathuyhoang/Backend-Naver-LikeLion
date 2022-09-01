@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  mysql-springboot-container:
+    image: mysql:8.0.30
+    container_name: mysql-springboot-container
+    ports:
+      - '3310:3306'
+    networks:
+      - backend
+    environment:
+      - MYSQL_USER=lvquang
+      - MYSQL_PASSWORD=123456
+      - MYSQL_ROOT_PASSWORD=Abc@123456789
+      - MYSQL_DATABASE=ecommerce
+  spring-boot-ecommerce:
+    image: lvquang0403/spring-boot-ecommerce
+    container_name: spring-boot-ecommerce
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./:/app
+    networks:
+      - backend
+networks:
+  backend:
+    name: springboot-app-network
+
+
+
