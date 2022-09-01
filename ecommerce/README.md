@@ -164,7 +164,7 @@
     ]
 }
 ```
-#### Add item in cart of Customer
+#### Update item in cart of Customer
 ##### Patern - localhost:8080/cart/insertProduct/{customerId}
 ##### POST - localhost:8080/cart/insertProduct/2
 ###### Before update
