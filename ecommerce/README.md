@@ -11,6 +11,13 @@
 6. Verify in Datadog that your container picks up the docker and logs of project
 7. Open favorite brower and test APIs (project running on port 8080)
 
+### How access mysql database running in docker container ?
+#### 1. open terminal and run `docker exec -ti mysql-springboot-container mysql -u root -p` then enter password is `Abc@123456789`
+![image](https://user-images.githubusercontent.com/104447131/187961267-5cb05116-7d60-4a94-98f3-ff6bbbb9927b.png)
+#### 2. type `use ecommerce` then query normaly
+![image](https://user-images.githubusercontent.com/104447131/187961589-476275e9-811a-4479-9299-3f77530c93a5.png)
+
+
 
 #### Get Product has price < 500
 ##### Patern - localhost:8080/product/find-product/{condition}/{price}
