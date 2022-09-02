@@ -155,7 +155,7 @@ spring.jpa.show-sql=true
  ```
  
  ### Add item into cart with customer_id param of customer (using Mybatis)
- #### - Params: customẻ_id, product_id, quantity
+ #### - Params: customer_id, product_id, quantity
  #### - Create cart for customer (if not exist) and update cart_id
  #### - Calculate total_amout based on quantity_wished, price of product and insert into cart
  #### * If existing item in cart, calculate again and update. In contrast, insert into cart
