@@ -58,7 +58,7 @@ spring.jpa.show-sql=true
 | `type`           | `varchar(3)`             |          |
 | `size`           | `varchar(3)`             |          |
 | `quantity`       | `int`                    | not null |
-| `price`          | `demical910,0`           |          |
+| `price`          | `demical(10,0)`          |          |
 
 ### Data
 
@@ -154,10 +154,10 @@ spring.jpa.show-sql=true
  }
  ```
  
- ### Add item into cart with param customer_id of customer (using Mybatis)
+ ### Add item into cart with customer_id param of customer (using Mybatis)
  #### - Params: customẻ_id, product_id, quantity
  #### - Create cart for customer (if not exist) and update cart_id
- #### - Calculate total_amout based on quantity_wished, price of product and insert int cart
+ #### - Calculate total_amout based on quantity_wished, price of product and insert into cart
  #### * If existing item in cart, calculate again and update. In contrast, insert into cart
  Do this function and display "Successfully!" if do it successfully and check by geting all items in cart  
  - Request: `POST` - http://localhost:8080/cart_item/add/2/4/1
