@@ -28,7 +28,8 @@ public interface Cart_itemRepository {
     void addCartItem(int customer_id, int product_id, int quantity_wished);
 
     // Count product_id
-    @Select("select count(product_id) from cart_item where product_id=#{product_id}")
+    @Select("select count(product_id) from cart_item where product_id=#{product_id} and cart_id=" +
+            "(select cart_id from customer where customer_id=#{customer_id})")
     int countProduct_id(int product_id);
 
     //Update cart_item
